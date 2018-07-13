@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DWTools</string>
+    <string name="printer">Printer</string>
+    <string name="upload">Upload</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_calculate">Calculations</string>
+    <string name="nav_shopping">Shopping</string>
+    <string name="menu">Menu</string>
+    <string name="blue_print1">No Printer found</string>
+    <string name="blue_print2">Printer Attached:</string>
+    <string name="blue_print3">Printer Attached</string>
+    <string name="save">save</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Files</item>
+        <item>Calculations</item>
+        <item>Shopping</item>
+    </string-array>
+
+    <string-array name="cal_items_titles">
+        <item>Basic</item>
+        <item>Drywall</item>
+        <item>Paint</item>
+    </string-array>
+</resources>

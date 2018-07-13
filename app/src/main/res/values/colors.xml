@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="NIGHT">#0C090A</color>
+    <color name="GUNMETAL">#2C3539</color>
+    <color name="MID_NIGHT">#2B1B17</color>
+    <color name="CHARCOAL">#34322C</color>
+
+    <!--shape color-->
+    <color name="ed_stroke">#E8E8E8</color>
+    <color name="ed_background">#F5F5F5</color>
+    <color name="btn_clr">#1ac6ff</color>
+</resources>

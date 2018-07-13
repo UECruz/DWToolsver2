@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "53466896288",
+    "firebase_url": "https://dwtools-3a9b7.firebaseio.com",
+    "project_id": "dwtools-3a9b7",
+    "storage_bucket": "dwtools-3a9b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53466896288:android:b39f1e4eb1fe3546",
+        "android_client_info": {
+          "package_name": "com.java1.fullsail.dwtools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53466896288-kfe51qe0404en8i8umcnfma6lvb0t2sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.java1.fullsail.dwtools",
+            "certificate_hash": "be71f82ec5c97d5d975bd2bdc524dc42a03a4a82"
+          }
+        },
+        {
+          "client_id": "53466896288-lfghes327tpu79r6553v9iio2ualhrvc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.java1.fullsail.dwtools",
+            "certificate_hash": "2380b63b36c213044bfa2da15f43346157b8ac36"
+          }
+        },
+        {
+          "client_id": "53466896288-16bnob1h34cjv7se9bsnupv7lp723sra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnRDmc5i0BsuZ-CfkgIR8IczGrdMGlEWw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53466896288-16bnob1h34cjv7se9bsnupv7lp723sra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

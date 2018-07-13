@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drywall"
+    tools:context=".activities.DrywallCalculator">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/apptool"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+                </android.support.v7.widget.Toolbar>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:background="@color/colorWhite">
+
+                        <EditText
+                            android:id="@+id/width3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/slopping"
+                            android:layout_alignStart="@+id/rmPerm"
+                            android:ems="5"
+                            android:hint="width"
+                            android:textAlignment="center"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/x4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/x1"
+                            android:layout_alignTop="@+id/slopping"
+                            android:text="X"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/height3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/width3"
+                            android:layout_centerHorizontal="true"
+                            android:ems="5"
+                            android:hint="height"
+                            android:inputType="number"
+                            android:textAlignment="center" />
+
+                        <EditText
+                            android:id="@+id/width"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/ceiling"
+                            android:layout_alignStart="@+id/rmPerm"
+                            android:ems="5"
+                            android:hint="width"
+                            android:textAlignment="center"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/x2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/ceiling"
+                            android:layout_alignStart="@+id/x1"
+                            android:text="X"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/height2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/excluded"
+                            android:layout_centerHorizontal="true"
+                            android:ems="5"
+                            android:hint="height"
+                            android:textAlignment="center"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/excluded"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ceiling"
+                            android:layout_alignParentStart="true"
+                            android:text="Excluded Area (in ft.):"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/slopping"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/excluded"
+                            android:text="Slopping Wall (in ft.):"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/width2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/x3"
+                            android:layout_alignStart="@+id/rmPerm"
+                            android:ems="5"
+                            android:hint="width"
+                            android:textAlignment="center"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/x3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/x1"
+                            android:layout_alignTop="@+id/excluded"
+                            android:text="X"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/ceiling"
+                            android:layout_centerHorizontal="true"
+                            android:ems="5"
+                            android:hint="length"
+                            android:textAlignment="center"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/wall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:text=" Wall (in fts):"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/wall"
+                            android:layout_centerHorizontal="true"
+                            android:ems="5"
+                            android:layout_marginEnd="5dp"
+                            android:hint="height"
+                            android:textAlignment="center"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/rmPerm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/x1"
+                            android:layout_alignParentEnd="true"
+                            android:ems="5"
+                            android:hint="rm permeter"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            tools:layout_editor_absoluteX="299dp"
+                            tools:layout_editor_absoluteY="33dp" />
+
+                        <TextView
+                            android:id="@+id/x1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/height"
+                            android:layout_alignTop="@+id/wall"
+                            android:layout_centerHorizontal="true"
+                            android:text="X"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ceiling"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/wall"
+                            android:layout_below="@+id/wall"
+                            android:text="Ceiling (in fts):"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/calBtm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Calculate" />
+
+                        <TextView
+                            android:id="@+id/txtArea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/calBtm"
+                            android:layout_toStartOf="@+id/height3"
+                            android:text="Total Area:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/area2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/txtArea"
+                            android:layout_toStartOf="@+id/width3"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/wallTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/txtWall"
+                            android:layout_toStartOf="@+id/width3"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/txtWall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView3"
+                            android:layout_toStartOf="@+id/height3"
+                            android:text="Total Wall:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtArea"
+                            android:layout_toStartOf="@+id/height3"
+                            android:text="Excluded:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/excludedTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/textView3"
+                            android:layout_toEndOf="@+id/calBtm"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/ceilTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtWall"
+                            android:layout_toStartOf="@+id/height3"
+                            android:text="Total Ceiling:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ceilTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ceilTxt"
+                            android:layout_toEndOf="@+id/calBtm"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/wall"
+                            android:layout_below="@id/ceilTxt"
+                            android:text="Total Slopping Wall:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/slopTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView12"
+                            android:layout_toEndOf="@+id/height3"
+                            android:text="TextView" />
+                </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ListView
+            android:id="@+id/navList2"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|start"
+            android:background="#ffeeeeee"
+            tools:ignore="RtlHardcoded" />
+
+
+
+</android.support.v4.widget.DrawerLayout>

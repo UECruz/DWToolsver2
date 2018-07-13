@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.java1.fullsail.dwtools">
+
+    <uses-permission
+        android:name="android.permission.ACCOUNT_MANAGER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activities.LoginActivtiy">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SignUpActvity" />
+        <activity
+            android:name=".activities.HomePage"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".activities.FileList" />
+        <activity android:name=".activities.VerifyActivity" />
+        <activity android:name=".items.File_grid" />
+        <activity android:name=".activities.FullScreenActivity"></activity>
+        <activity android:name=".activities.Gallery" />
+        <activity android:name=".activities.CalculationMenu" />
+        <activity android:name=".activities.CalculatorPage" />
+        <activity android:name=".activities.DrywallCalculator" />
+        <activity android:name=".activities.PaintCalculator" />
+        <activity android:name=".activities.ShoppingActvity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.java1.fullsail.dwtools"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"/>
+        </provider>
+    </application>
+
+
+
+</manifest>
