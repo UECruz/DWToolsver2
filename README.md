@@ -17,8 +17,6 @@ Instruction:
 				Phone Number
 				Verfication Code
 				Bug/Fixes:
-				Save function need to work on
-				Feature Currently in work:
-				API
-				Shopping
-				PDF Viewer Editor
+				Shopping Image Glitch
+				Details Calculation
+				Verification Error
