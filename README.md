@@ -17,6 +17,4 @@ Instruction:
 				Phone Number
 				Verfication Code
 				Bug/Fixes:
-				Shopping Image Glitch
-				Details Calculation
-				Verification Error
+				None
